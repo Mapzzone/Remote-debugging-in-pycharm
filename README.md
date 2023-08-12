@@ -201,7 +201,7 @@ Here we show you how to set up PyCharm (a IDE for python) to play with the downl
 - Please check the GPU utilization (by `gpustat` or `nvidia-smi`) of the server before running your job.
 - If the GPU resources are not managed by Slurm, specify the GPU id of your job by running with `CUDA_VISIBLE_DEVICES=X python xxx.py` to assign your job to certain gpu(s). Otherwise, use Slurm commands to submit your jobs.
 
-## Guidance for running jobs by torch.distributed.launch [Pycharm]
+## Guidance for running jobs by torch.distributed.launch [local + remote]
 
 - Create soft link in your project, example:
    - First command: the env name of your project, it should be directed to "distributed path", my path is:
